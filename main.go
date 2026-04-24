@@ -56,7 +56,7 @@ func main() {
 		panic(err)
 	}
 	gameCollection = client.Database("Tictactoe").Collection("Games");
-	fmt.Println("Mongo ka bhosda Aaaag")
+	fmt.Println("Mongo Initilialized...")
 	
 	http.HandleFunc("/start", start)
 	// http.HandleFunc("/reset", reset)

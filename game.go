@@ -73,7 +73,7 @@ func gameChecker(ID string, playerID string) (GameStruct, error){
 
 func play(req GameStruct, playerID string) (GameStruct, error){
 	if(req.Win == false && (req.Turn == "X" && req.PlayerX != playerID || req.Turn == "O" && req.PlayerO != playerID)){
-		return req, fmt.Errorf("Wait for your turn, motherfucker");
+		return req, fmt.Errorf("Wait for your turn.....");
 	}
 	updatedGame := req;
 
