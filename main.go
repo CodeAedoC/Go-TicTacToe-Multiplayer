@@ -59,7 +59,7 @@ func main() {
 	fmt.Println("Mongo ka bhosda Aaaag")
 	
 	http.HandleFunc("/start", start)
-	http.HandleFunc("/reset", reset)
+	// http.HandleFunc("/reset", reset)
 	http.HandleFunc("/ws/{id}", ws)
 
 	log.Fatal(http.ListenAndServe(":8080", nil))

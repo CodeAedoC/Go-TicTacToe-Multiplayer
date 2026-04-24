@@ -200,16 +200,16 @@ func deletePlayer(ID string, playerID string) (GameStruct, error){
 	return currentBoard, nil;
 }
 
-func reset(w http.ResponseWriter, r *http.Request) {
-	if r.Method != http.MethodPost {
-		http.Error(w, "use POST Method", http.StatusMethodNotAllowed)
-		return
-	}
+// func reset(w http.ResponseWriter, r *http.Request) {
+// 	if r.Method != http.MethodPost {
+// 		http.Error(w, "use POST Method", http.StatusMethodNotAllowed)
+// 		return
+// 	}
 
-	req := GameStruct{
-		Turn: "X",
-	}
+// 	req := GameStruct{
+// 		Turn: "X",
+// 	}
 
-	w.Header().Set("Content-Type", "application/json")
-	json.NewEncoder(w).Encode(&req)
-}
+// 	w.Header().Set("Content-Type", "application/json")
+// 	json.NewEncoder(w).Encode(&req)
+// }
